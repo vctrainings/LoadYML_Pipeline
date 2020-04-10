@@ -1,5 +1,5 @@
 node { 
    checkout scm
    config=readYaml file: "config_dev.yml"
-   print(type(config))
+   print(config.property1.toString())
  }
